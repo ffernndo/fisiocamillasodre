@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400&amp;family=Hanken+Grotesk:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; }
+  ::selection { background: #F2D9CE; color: #3A2C26; }
+  a { color: #B96B4C; text-decoration: none; }
+  a:hover { color: #8F4A30; }
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  @media (max-width: 760px) {
+    section { min-height: 0 !important; padding: 88px 0 !important; }
+    section:first-of-type { padding-top: 16px !important; }
+    .navlinks { display: none !important; }
+    [data-parallax] { display: none !important; }
+    .inset { right: 10px !important; bottom: -16px !important; width: 40% !important; }
+    h1 { font-size: 38px !important; line-height: 1.12 !important; }
+    .herophoto { display: none !important; }
+    .heromini { display: flex !important; }
+    .fcard { left: 12px !important; right: auto !important; }
+    .herocta { justify-content: flex-start; }
+    .herocta a { width: auto; text-align: left; }
+  }
+</style>
+</helmet>
+<div style="background:#FAF4EC;color:#3A2C26;font-family:'Hanken Grotesk',sans-serif;font-weight:300;line-height:1.6;overflow-x:hidden;">
+
+  <!-- HEADER -->
+  <header style="position:sticky;top:0;z-index:50;background:rgba(250,244,236,0.9);backdrop-filter:blur(10px);border-bottom:1px solid #E8DCCB;">
+    <div style="max-width:1100px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <svg viewBox="0 0 120 90" style="width:30px;"><path d="M8 62 C 28 62, 40 68, 52 58 C 66 46, 58 26, 46 34 C 34 42, 42 64, 64 62 C 88 60, 100 42, 112 22" fill="none" stroke="#B96B4C" stroke-width="6" stroke-linecap="round"></path></svg>
+        <span style="font-family:'Sora',sans-serif;font-weight:200;font-size:17px;">Camilla <span style="color:#B96B4C;">Sodré</span></span>
+      </div>
+      <nav style="display:flex;gap:22px;align-items:center;font-size:13.5px;flex-wrap:wrap;"><span class="navlinks" style="display:contents;">
+        <a href="#servicos" style="color:#5B4A3F;">Cuidados</a>
+        <a href="#sobre" style="color:#5B4A3F;">Sobre</a>
+        <a href="#como-funciona" style="color:#5B4A3F;">Como funciona</a>
+        <a href="#faq" style="color:#5B4A3F;">Dúvidas</a>
+        </span><a href="https://wa.me/5521998993788" style="background:#8F4A30;color:#FAF4EC;font-size:13px;font-weight:600;letter-spacing:0.06em;padding:11px 22px;border-radius:999px;" style-hover="background:#7A3D26;color:#FAF4EC;">Agendar avaliação</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section style="position:relative;overflow:hidden;display:flex;align-items:center;min-height:720px;">
+    <div style="max-width:1100px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:48px;align-items:center;position:relative;width:100%;">
+      <div style="position:relative;z-index:2;background:rgba(250,244,236,0.82);border-radius:12px;">
+        <div class="heromini" style="display:none;align-items:center;gap:14px;margin:0 0 20px;">
+          <img src="assets/camilla/hero_escolhida.png" alt="Camilla Sodré" style="width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid #E8C9B8;">
+          <div>
+            <div style="font-weight:500;font-size:14.5px;color:#3A2C26;">Camilla Sodré</div>
+            <div style="font-size:12px;color:#9C8B7D;">Fisioterapeuta · CREFITO 328226-F</div>
+          </div>
+        </div>
+        <div style="font-size:12px;font-weight:600;letter-spacing:0.26em;text-transform:uppercase;color:#B96B4C;">Fisioterapia · Saúde da Mulher em Movimento</div>
+        <h1 style="font-family:'Sora',sans-serif;font-weight:100;font-size:clamp(34px,4.6vw,54px);line-height:1.14;margin:20px 0 18px;text-wrap:pretty;">O corpo não se conserta. Ele <span style="color:#B96B4C;">volta a fluir</span>.</h1>
+        <p style="font-size:17px;color:#5B4A3F;max-width:46ch;margin:0 0 30px;">Fisioterapia pélvica, dermato funcional e saúde da mulher — atendimentos em Niterói e Icaraí, com cuidado integrado que olha para a função, o conforto e o bem-estar, não só para a aparência.</p>
+        <div class="herocta" style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;">
+          <a href="https://wa.me/5521998993788" style="font-size:15px;font-weight:500;color:#8F4A30;">Agendar pelo WhatsApp →</a>
+        </div>
+        <div style="display:flex;gap:22px;margin-top:32px;font-size:13px;color:#9C8B7D;flex-wrap:wrap;">
+          <span style="display:inline-flex;align-items:center;gap:7px;"><svg viewBox="0 0 48 48" style="width:16px;flex-shrink:0;"><path d="M24 42 C 14 32, 10 24, 12 17 C 14 10, 22 8, 24 14 C 26 8, 34 10, 36 17 C 38 24, 34 32, 24 42 Z M 24 20 C 24 22, 24 24, 24 26" fill="none" stroke="#B96B4C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>Atendimentos em Niterói e Icaraí / RJ</span>
+          <span>CREFITO 328226-F</span>
+        </div>
+      </div>
+      <div class="herophoto" style="position:relative;z-index:2;">
+        <img src="assets/camilla/hero_escolhida.png" alt="Camilla Sodré, fisioterapeuta" style="width:100%;aspect-ratio:4/5;max-height:560px;object-fit:cover;border-radius:14px;display:block;box-shadow:0 24px 60px rgba(58,44,38,0.18);">
+        <div style="position:absolute;inset:0;border-radius:14px;background:linear-gradient(180deg,rgba(58,44,38,0) 62%,rgba(58,44,38,0.38));pointer-events:none;"></div>
+        <div class="fcard" style="position:absolute;left:6%;bottom:19%;background:#FAF4EC;border-radius:10px;padding:12px 16px;box-shadow:0 12px 30px rgba(58,44,38,0.18);display:flex;align-items:center;gap:10px;max-width:82%;">
+          <svg viewBox="0 0 48 48" style="width:26px;flex-shrink:0;"><path d="M8 32 C 16 16, 24 38, 32 24 S 42 20, 42 26" fill="none" stroke="#B96B4C" stroke-width="3" stroke-linecap="round"></path></svg>
+          <span style="font-size:13px;color:#5B4A3F;">"É comum, <strong style="font-weight:500;color:#B96B4C;">mas não é normal</strong>."</span>
+        </div>
+        <div class="fcard" style="position:absolute;left:6%;bottom:6%;background:#3A2C26;color:#EFE4D6;border-radius:10px;padding:10px 15px;box-shadow:0 12px 30px rgba(58,44,38,0.24);display:flex;align-items:center;gap:9px;max-width:82%;">
+          <svg viewBox="0 0 48 48" style="width:22px;flex-shrink:0;"><path d="M24 40 C 12 32, 8 22, 14 16 C 19 11, 24 16, 24 20 C 24 16, 29 11, 34 16 C 40 22, 36 32, 24 40 Z" fill="none" stroke="#E7B98F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <span style="font-size:12.5px;">Atendimento <strong style="font-weight:500;color:#E7B98F;">humanizado</strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" style="background:#F2DACE;scroll-margin-top:70px;display:flex;align-items:center;min-height:720px;">
+    <div style="max-width:1100px;margin:0 auto;padding:0 24px;width:100%;">
+      <div style="font-size:12px;font-weight:600;letter-spacing:0.26em;text-transform:uppercase;color:#8F4A30;">Cuidados</div>
+      <h2 style="font-family:'Sora',sans-serif;font-weight:100;font-size:clamp(28px,3.4vw,40px);line-height:1.2;margin:16px 0 40px;">Quatro áreas, um mesmo corpo <span style="color:#B96B4C;">inteiro</span></h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:16px;">
+        <div style="background:#FAF4EC;border-radius:10px;padding:28px;display:flex;flex-direction:column;">
+          <svg viewBox="0 0 48 48" style="width:44px;"><path d="M24 8 C 24 20, 24 26, 24 30 M 14 22 C 18 28, 30 28, 34 22 M 18 40 C 20 34, 28 34, 30 40" fill="none" stroke="#B96B4C" stroke-width="3" stroke-linecap="round"></path></svg>
+          <div style="font-family:'Sora',sans-serif;font-weight:300;font-size:20px;margin-top:16px;">Fisioterapia pélvica</div>
+          <p style="font-size:14px;color:#5B4A3F;margin:8px 0 0;">Dor pélvica, incontinência, pós-parto e reeducação do assoalho — com avaliação individual.</p>
+        </div>
+        <div style="background:#FAF4EC;border-radius:10px;padding:28px;display:flex;flex-direction:column;">
+          <svg viewBox="0 0 48 48" style="width:44px;"><path d="M10 38 C 10 24, 20 24, 24 16 C 28 24, 38 24, 38 38" fill="none" stroke="#B96B4C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <div style="font-family:'Sora',sans-serif;font-weight:300;font-size:20px;margin-top:16px;">Dermato funcional</div>
+          <p style="font-size:14px;color:#5B4A3F;margin:8px 0 0;">Pele tratada como função: cicatrizes, pós-operatório, saúde do tecido — não só estética.</p>
+        </div>
+        <div style="background:#FAF4EC;border-radius:10px;padding:28px;display:flex;flex-direction:column;">
+          <svg viewBox="0 0 48 48" style="width:44px;"><circle cx="24" cy="24" r="14" fill="none" stroke="#B96B4C" stroke-width="3"></circle><path d="M24 10 C 30 16, 30 32, 24 38" fill="none" stroke="#B96B4C" stroke-width="3" stroke-linecap="round"></path></svg>
+          <div style="font-family:'Sora',sans-serif;font-weight:300;font-size:20px;margin-top:16px;">Gestantes</div>
+          <p style="font-size:14px;color:#5B4A3F;margin:8px 0 0;">Preparo do corpo para gestação, parto e pós-parto, com movimento consciente.</p>
+        </div>
+        <div style="background:#FAF4EC;border-radius:10px;padding:28px;display:flex;flex-direction:column;">
+          <svg viewBox="0 0 48 48" style="width:44px;"><path d="M8 24 C 14 14, 22 14, 24 24 C 26 34, 34 34, 40 24" fill="none" stroke="#B96B4C" stroke-width="3" stroke-linecap="round"></path></svg>
+          <div style="font-family:'Sora',sans-serif;font-weight:300;font-size:20px;margin-top:16px;">Saúde da mulher</div>
+          <p style="font-size:14px;color:#5B4A3F;margin:8px 0 0;">Consciência corporal, bem-estar e vitalidade em todas as fases da vida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" style="scroll-margin-top:70px;position:relative;overflow:hidden;display:flex;align-items:center;min-height:720px;">
+    <svg data-parallax="0.12" viewBox="0 0 1400 400" preserveAspectRatio="none" style="position: absolute; left: 5px; top: -14px; width: 100%; height: 280px; pointer-events: none"><path d="M-40 120 C 220 60, 480 180, 740 100 S 1220 20, 1460 100" fill="none" stroke="#C08462" stroke-width="1.8" opacity="0.3"></path></svg>
+    <div style="max-width:1100px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:52px;align-items:center;position:relative;width:100%;">
+      <div style="position:relative;z-index:2;">
+        <img src="assets/camilla/meio_corpo_clinica.jpg" alt="Camilla sorrindo junto à janela" style="width:100%;aspect-ratio:4/5;max-height:560px;object-fit:cover;border-radius:12px;display:block;">
+        <img src="assets/camilla/sobre_inset.png" alt="Retrato de Camilla" class="inset" style="position:absolute;right:-18px;bottom:-24px;width:44%;aspect-ratio:1;object-fit:cover;border-radius:10px;border:5px solid #FAF4EC;box-shadow:0 14px 34px rgba(58,44,38,0.2);">
+      </div>
+      <div style="position:relative;z-index:2;background:rgba(250,244,236,0.82);border-radius:12px;">
+        <div style="font-size:12px;font-weight:600;letter-spacing:0.26em;text-transform:uppercase;color:#B96B4C;">Sobre</div>
+        <h2 style="font-family:'Sora',sans-serif;font-weight:100;font-size:clamp(28px,3.4vw,40px);line-height:1.2;margin:16px 0 18px;">Prazer, <span style="color:#B96B4C;">Camilla</span></h2>
+        <p style="font-size:16px;color:#5B4A3F;margin:0 0 14px;">Sou fisioterapeuta e trabalho com o corpo feminino de forma integrada — não só a aparência, mas a função, o conforto e o bem-estar. Muita coisa que a gente aprendeu a aceitar como "normal" (dor, desconforto, vergonha) é comum, mas não é normal — e se trata.</p>
+        <p style="font-size:16px;color:#5B4A3F;margin:0 0 26px;">Atendo em Niterói e Icaraí: avaliação individual, plano próprio para cada corpo e uma escuta que não tem pressa.</p>
+        <div style="display:flex;gap:20px;font-size:13.5px;color:#9C8B7D;flex-wrap:wrap;">
+          <span>CREFITO 328226-F</span>
+          <span>·</span>
+          <a href="https://instagram.com/camillasodre.fisio">@camillasodre.fisio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" style="background:#3A2C26;color:#EFE4D6;position:relative;overflow:hidden;scroll-margin-top:70px;display:flex;align-items:center;min-height:720px;">
+    <svg data-parallax="0.1" viewBox="0 0 1200 400" preserveAspectRatio="none" style="position:absolute;left:0;right:0;bottom:-40px;width:100%;height:200px;pointer-events:none;opacity:0.16;"><path d="M-20 130 C 220 100, 420 148, 660 116 S 1080 82, 1220 112" fill="none" stroke="#E7B98F" stroke-width="2"></path></svg>
+    <div style="max-width:1100px;margin:0 auto;padding:0 24px;position:relative;width:100%;">
+      <div style="font-size:12px;font-weight:600;letter-spacing:0.26em;text-transform:uppercase;color:#C08462;">Como funciona</div>
+      <h2 style="font-family:'Sora',sans-serif;font-weight:200;font-size:clamp(28px,3.4vw,40px);line-height:1.2;margin:16px 0 40px;">Da primeira conversa ao corpo que <span style="color:#E7B98F;">flui</span></h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px;">
+        <div style="background:#463629;border-radius:10px;padding:26px;display:flex;flex-direction:column;">
+          <div style="font-family:'Sora',sans-serif;font-weight:100;font-size:38px;color:#E7B98F;">01</div>
+          <div style="font-weight:500;font-size:16px;margin-top:10px;">Você chama no WhatsApp</div>
+          <p style="font-size:14px;color:#C9AE94;margin:6px 0 0;">Conta o que está sentindo, sem formulário frio. Eu respondo pessoalmente.</p>
+        </div>
+        <div style="background:#463629;border-radius:10px;padding:26px;display:flex;flex-direction:column;">
+          <div style="font-family:'Sora',sans-serif;font-weight:100;font-size:38px;color:#E7B98F;">02</div>
+          <div style="font-weight:500;font-size:16px;margin-top:10px;">Avaliação individual</div>
+          <p style="font-size:14px;color:#C9AE94;margin:6px 0 0;">Uma sessão para entender seu corpo e sua história. Nenhum protocolo pronto.</p>
+        </div>
+        <div style="background:#463629;border-radius:10px;padding:26px;display:flex;flex-direction:column;">
+          <div style="font-family:'Sora',sans-serif;font-weight:100;font-size:38px;color:#E7B98F;">03</div>
+          <div style="font-weight:500;font-size:16px;margin-top:10px;">Plano de cuidado</div>
+          <p style="font-size:14px;color:#C9AE94;margin:6px 0 0;">Objetivos claros, técnica com acolhimento e reavaliações ao longo do caminho.</p>
+        </div>
+        <div style="background:#463629;border-radius:10px;padding:26px;display:flex;flex-direction:column;">
+          <div style="font-family:'Sora',sans-serif;font-weight:100;font-size:38px;color:#E7B98F;">04</div>
+          <div style="font-weight:500;font-size:16px;margin-top:10px;">Autonomia</div>
+          <p style="font-size:14px;color:#C9AE94;margin:6px 0 0;">Você aprende a escutar e cuidar do próprio corpo — o objetivo é a sua liberdade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O ATENDIMENTO -->
+  <section style="position:relative;overflow:hidden;display:flex;align-items:center;min-height:720px;">
+    <svg data-parallax="0.14" viewBox="0 0 1400 400" preserveAspectRatio="none" style="position: absolute; left: 11px; width: 100%; height: 260px; pointer-events: none; top: -54px"><path d="M-40 200 C 240 150, 500 250, 760 180 S 1240 110, 1460 180" fill="none" stroke="#C08462" stroke-width="1.8" opacity="0.3"></path></svg>
+    <div style="max-width:1100px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:52px;align-items:center;position:relative;width:100%;">
+      <div style="position:relative;z-index:2;background:rgba(250,244,236,0.82);border-radius:12px;">
+        <div style="font-size:12px;font-weight:600;letter-spacing:0.26em;text-transform:uppercase;color:#B96B4C;">O atendimento</div>
+        <h2 style="font-family:'Sora',sans-serif;font-weight:100;font-size:clamp(28px,3.4vw,40px);line-height:1.2;margin:16px 0 18px;">Um cuidado que não parece <span style="color:#B96B4C;">hospital</span></h2>
+        <p style="font-size:16px;color:#5B4A3F;margin:0 0 14px;">Nada de protocolo frio: o atendimento em Niterói e Icaraí é pensado para o corpo relaxar antes mesmo da sessão começar — no seu ritmo, no seu espaço.</p>
+        <p style="font-size:16px;color:#5B4A3F;margin:0 0 26px;">O toque é técnico e cuidadoso — cada sessão respeita o seu tempo e o seu limite.</p>
+        <a href="https://wa.me/5521998993788" style="display:inline-block;background:#8F4A30;color:#FAF4EC;font-size:15px;font-weight:600;padding:14px 28px;border-radius:999px;" style-hover="background:#7A3D26;color:#FAF4EC;">Conversar no WhatsApp</a>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;position:relative;z-index:2;">
+        <img src="assets/camilla/atendimento_tablet.png" alt="Camilla na sala de atendimento" style="width:100%;aspect-ratio:3/4;max-height:480px;object-fit:cover;border-radius:10px;display:block;margin-top:26px;">
+        <img src="assets/camilla/maos_creme.jpg" alt="Detalhe do cuidado com as mãos" style="width:100%;aspect-ratio:3/4;max-height:480px;object-fit:cover;border-radius:10px;display:block;">
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background:#F2DACE;scroll-margin-top:70px;display:flex;align-items:center;min-height:720px;">
+    <div style="max-width:1100px;margin:0 auto;padding:0 24px;width:100%;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:44px;align-items:start;">
+      <div>
+        <div style="font-size:12px;font-weight:600;letter-spacing:0.26em;text-transform:uppercase;color:#8F4A30;">Dúvidas frequentes</div>
+        <h2 style="font-family:'Sora',sans-serif;font-weight:100;font-size:clamp(28px,3.4vw,40px);line-height:1.2;margin:16px 0 18px;">O que toda mulher pergunta <span style="color:#B96B4C;">antes de vir</span></h2>
+        <p style="font-size:15px;color:#5B4A3F;max-width:38ch;margin:0 0 22px;">Não achou a sua dúvida? Me chama no WhatsApp — eu mesma respondo.</p>
+        <a href="https://wa.me/5521998993788" style="display:inline-block;background:#8F4A30;color:#FAF4EC;font-size:14px;font-weight:600;padding:13px 26px;border-radius:999px;" style-hover="background:#7A3D26;color:#FAF4EC;">Perguntar no WhatsApp</a>
+      </div>
+      <div style="display:grid;gap:12px;">
+        <details style="background:#FAF4EC;border-radius:10px;padding:20px 24px;">
+          <summary style="font-weight:500;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:12px;">Fisioterapia pélvica dói?<span style="color:#B96B4C;font-size:20px;flex-shrink:0;">+</span></summary>
+          <p style="font-size:14.5px;color:#5B4A3F;margin:12px 0 0;">Não deve doer. Todo o trabalho respeita o seu limite e o seu tempo — a avaliação é conversada passo a passo, e nada acontece sem o seu consentimento.</p>
+        </details>
+        <details style="background:#FAF4EC;border-radius:10px;padding:20px 24px;">
+          <summary style="font-weight:500;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:12px;">Escapar xixi ao tossir ou treinar é normal?<span style="color:#B96B4C;font-size:20px;flex-shrink:0;">+</span></summary>
+          <p style="font-size:14.5px;color:#5B4A3F;margin:12px 0 0;">É comum, mas não é normal — e tem tratamento. A perda urinária costuma responder muito bem à reeducação do assoalho pélvico.</p>
+        </details>
+        <details style="background:#FAF4EC;border-radius:10px;padding:20px 24px;">
+          <summary style="font-weight:500;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:12px;">Grávida pode fazer?<span style="color:#B96B4C;font-size:20px;flex-shrink:0;">+</span></summary>
+          <p style="font-size:14.5px;color:#5B4A3F;margin:12px 0 0;">Pode — e ajuda muito. O acompanhamento prepara o corpo para o parto e o pós-parto, sempre integrado ao seu pré-natal.</p>
+        </details>
+        <details style="background:#FAF4EC;border-radius:10px;padding:20px 24px;">
+          <summary style="font-weight:500;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:12px;">Quantas sessões vou precisar?<span style="color:#B96B4C;font-size:20px;flex-shrink:0;">+</span></summary>
+          <p style="font-size:14.5px;color:#5B4A3F;margin:12px 0 0;">Depende do seu corpo e da sua queixa — por isso tudo começa com a avaliação individual. Cada plano é próprio, com reavaliações ao longo do caminho.</p>
+        </details>
+        <details style="background:#FAF4EC;border-radius:10px;padding:20px 24px;">
+          <summary style="font-weight:500;font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:12px;">Onde é o atendimento?<span style="color:#B96B4C;font-size:20px;flex-shrink:0;">+</span></summary>
+          <p style="font-size:14.5px;color:#5B4A3F;margin:12px 0 0;">Atendo em Niterói e Icaraí / RJ. Os detalhes de local são combinados no agendamento pelo WhatsApp.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section style="position:relative;overflow:hidden;display:flex;align-items:center;min-height:720px;">
+    
+    <div style="max-width:1100px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:52px;align-items:center;position:relative;width:100%;">
+      <div style="position:relative;z-index:2;background:rgba(250,244,236,0.82);border-radius:12px;">
+        <svg viewBox="0 0 120 90" style="width:52px;"><path d="M8 62 C 28 62, 40 68, 52 58 C 66 46, 58 26, 46 34 C 34 42, 42 64, 64 62 C 88 60, 100 42, 112 22" fill="none" stroke="#B96B4C" stroke-width="5" stroke-linecap="round"></path></svg>
+        <h2 style="font-family:'Sora',sans-serif;font-weight:100;font-size:clamp(30px,4vw,46px);line-height:1.16;margin:22px 0 14px;">Seu corpo está tentando <span style="color:#B96B4C;">dizer algo?</span></h2>
+        <p style="font-size:16px;color:#5B4A3F;max-width:44ch;margin:0 0 30px;">Vamos conversar. A primeira avaliação é o espaço para entender o que o seu corpo precisa — sem julgamento, sem pressa.</p>
+        <a href="https://wa.me/5521998993788" style="display:inline-block;background:#8F4A30;color:#FAF4EC;font-size:16px;font-weight:600;padding:17px 38px;border-radius:999px;" style-hover="background:#7A3D26;color:#FAF4EC;">Agendar pelo WhatsApp</a>
+        <div style="font-size:13px;color:#9C8B7D;margin-top:18px;">+55 21 99899-3788 · Atendimentos em Niterói e Icaraí / RJ</div>
+      </div>
+      <div style="position:relative;z-index:2;">
+        <img src="assets/camilla/retrato_rose.png" alt="Camilla Sodré" style="width:100%;aspect-ratio:4/5;max-height:560px;object-fit:cover;border-radius:12px;display:block;box-shadow:0 24px 60px rgba(58,44,38,0.18);">
+        <div class="fcard" style="position:absolute;left:-14px;bottom:26px;background:#FAF4EC;border-radius:10px;padding:12px 18px;box-shadow:0 12px 30px rgba(58,44,38,0.16);display:flex;align-items:center;gap:10px;">
+          <svg viewBox="0 0 48 48" style="width:26px;flex-shrink:0;"><path d="M8 32 C 16 16, 24 38, 32 24 S 42 20, 42 26" fill="none" stroke="#B96B4C" stroke-width="3" stroke-linecap="round"></path></svg>
+          <span style="font-size:13px;color:#5B4A3F;">Escuta que <strong style="font-weight:500;color:#B96B4C;">não tem pressa</strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer style="background:#3A2C26;color:#C9AE94;padding:44px 0;">
+    <div style="max-width:1100px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <svg viewBox="0 0 150 100" style="width:34px;"><path d="M64 34 C 46 18, 24 30, 24 50 C 24 70, 44 84, 62 72 C 74 64, 78 50, 88 42 C 98 34, 116 30, 122 40 C 128 50, 112 56, 104 60 C 94 65, 88 74, 98 80 C 108 86, 122 80, 126 70" fill="none" stroke="#E7B98F" stroke-width="5" stroke-linecap="round"></path></svg>
+        <span style="font-size:13px;">Camilla Sodré · Fisioterapeuta · CREFITO 328226-F</span>
+      </div>
+      <div style="display:flex;gap:18px;font-size:13px;align-items:center;flex-wrap:wrap;">
+        <a href="https://instagram.com/camillasodre.fisio" style="color:#E7B98F;">@camillasodre.fisio</a>
+        <a href="https://wa.me/5521998993788" style="color:#E7B98F;">+55 21 99899-3788</a>
+        <span>Atendimentos em Niterói e Icaraí / RJ</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    this._raf = null;
+    this._update = () => {
+      this._raf = null;
+      const vh = window.innerHeight;
+      document.querySelectorAll('[data-parallax]').forEach((el) => {
+        const f = parseFloat(el.getAttribute('data-parallax')) || 0.15;
+        const parent = el.parentElement;
+        if (!parent) return;
+        const r = parent.getBoundingClientRect();
+        const center = r.top + r.height / 2 - vh / 2;
+        el.style.transform = 'translateY(' + (-center * f).toFixed(1) + 'px)';
+      });
+    };
+    this._onScroll = () => { if (!this._raf) this._raf = requestAnimationFrame(this._update); };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    window.addEventListener('resize', this._onScroll);
+    this._update();
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this._onScroll);
+    window.removeEventListener('resize', this._onScroll);
+    if (this._raf) cancelAnimationFrame(this._raf);
+  }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
