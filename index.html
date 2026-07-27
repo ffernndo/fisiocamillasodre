@@ -63,7 +63,16 @@
     .heromini { display: flex !important; }
     .fcard { left: 12px !important; right: auto !important; }
     .herocta { justify-content: flex-start; }
-    .herocta a { width: auto; text-align: left; }
+    /* No celular o CTA da hero vira botão sólido — é onde cai quase todo o tráfego de anúncio */
+    .herocta a {
+      background: #8F4A30 !important;
+      color: #FAF4EC !important;
+      display: inline-block;
+      padding: 15px 30px;
+      border-radius: 999px;
+      font-weight: 600 !important;
+      text-align: center;
+    }
   }
 </style>
 
