@@ -66,7 +66,10 @@
   body { margin: 0; background: var(--nevoa); color: var(--grafite);
          font-family: 'Hanken Grotesk', sans-serif; font-weight: 300; line-height: 1.6;
          overflow-x: hidden; }
-  img { max-width: 100%; }
+  /* height:auto é obrigatório junto com os atributos width/height do <img>:
+     sem ele, o height="600" do atributo vira altura de layout e o aspect-ratio
+     do CSS é ignorado — foi o que esticou a foto menor da seção "quem atende". */
+  img { max-width: 100%; height: auto; }
   ::selection { background: var(--blush); color: var(--grafite); }
   a { color: var(--rose-forte); text-decoration: none; }
   a:hover { color: var(--sage-forte); }
