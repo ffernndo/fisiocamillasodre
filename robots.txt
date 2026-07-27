@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fisiocamillasodre.com.br/sitemap.xml
